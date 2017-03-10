@@ -1,0 +1,72 @@
+.content{
+  padding:3%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  width:94%;
+  background: linear-gradient(to bottom,white,#eee,#eee,#eee,white);
+}
+
+.intro, .cv_link, .bio_link{
+  width:18%;
+  display:flex;
+  flex-flow:column wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:25px 1%;
+  border-radius: 10%;
+  transition: transform 1s;
+  background-color: rgba(0,0,0,0.03);
+}
+
+.intro:hover, .cv_link:hover, .bio_link:hover{
+  transform:scale(1.2);
+}
+
+.intro:hover .my-img, .cv_link:hover .cv-img, .bio_link:hover .bio-img{
+  box-shadow: 0.5px 0.5px 1px 2px blue;
+}
+
+
+.intro:hover .caption, .cv_link:hover .caption, .bio_link:hover .caption{
+  animation-name: colorchange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.my-img, .cv-img, .bio-img{
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.caption{
+  padding:10px 10%;
+  border-bottom: 6px solid black;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+@keyframes colorchange{
+  0% {border-bottom: 6px solid black;}
+  25% {border-bottom: 6px solid skyblue;}
+  50% {border-bottom: 6px solid lightgreen;}
+  75% {border-bottom: 6px solid green;}
+  100% {border-bottom: 6px solid black;}
+}
+
+
+@media all and (max-width:800px){
+  .content{
+    display:flex;
+    flex-flow:column wrap;
+  }
+  .intro, .cv_link, .bio_link{
+    width:100%;
+    margin-top:5px;
+  }
+  .intro:hover, .cv_link:hover, .bio_link:hover{
+    transform:scale(0.8);
+  }
+}

@@ -1,0 +1,85 @@
+.content{
+  padding:0.5%;
+  width:99%;
+  background: linear-gradient(to bottom,white,#eee,#eee,#eee,white);
+  display:flex;
+  flex-flow:flex wrap;
+  align-items:center;
+}
+
+.image-container{
+  padding:5%;
+  width:20%;
+}
+
+.details{
+  width:75%;
+  padding:10px 0.5%;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.personal, .education, .course, .skill, .profession, .activity{
+  width:40%;
+  background-color:rgba(0,0,0,0.01);
+  padding:1px 0.5%;
+  margin-bottom:10px;
+  border-radius: 5%;
+  transition: transform 1s;
+}
+
+.personal:hover, .education:hover, .course:hover, .skill:hover, .profession:hover, .activity:hover{
+  transform: scale(1.03);
+}
+
+.title{
+  font-weight: bold;
+}
+
+.data{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.caption{
+  width:39%;
+}
+
+.value{
+  width:60%;
+}
+
+.edu_list, .skill_list{
+  margin:0;
+  padding:0;
+}
+
+@media all and (max-width:1000px){
+
+  .content{
+    flex-flow: column wrap;
+  }
+
+  .image-container{
+    width:100%;
+    padding:0%;
+    text-align: center;
+  }
+
+  .my-img{
+    width:100px;
+    height:200px;
+  }
+
+  .details{
+    display:flex;
+    flex-flow:column wrap;
+    align-items: center;
+  }
+  .personal, .education, .course, .skill, .profession, .activity{
+    width:100%;
+    margin-bottom: 5px;
+  }
+}
