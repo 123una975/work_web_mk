@@ -1,10 +1,11 @@
 .content{
   padding:0.5%;
   width:99%;
-  background: linear-gradient(to bottom,white,#eee,#eee,#eee,white);
   display:flex;
   flex-flow:flex wrap;
   align-items:center;
+  color:skyblue;
+  font-family: "Russo One";
 }
 
 .image-container{
@@ -22,7 +23,7 @@
 
 .personal, .education, .course, .skill, .profession, .activity{
   width:40%;
-  background-color:rgba(0,0,0,0.01);
+  background-color:rgba(35,30,35,0.5);
   padding:1px 0.5%;
   margin-bottom:10px;
   border-radius: 5%;
@@ -33,8 +34,33 @@
   transform: scale(1.03);
 }
 
-.title{
+.title_personal, .title_education, .title_course, .title_skill, .title_profession, .title_activity{
   font-weight: bold;
+  color:lightgreen;
+}
+
+.title_personal::before{
+  content:url(../images/pdetail.png);
+}
+
+.title_education::before{
+  content:url(../images/edu.png);
+}
+
+.title_course::before{
+  content:url(../images/course.png);
+}
+
+.title_skill::before{
+  content:url(../images/skill.png);
+}
+
+.title_profession::before{
+  content:url(../images/prof.png);
+}
+
+.title_activity::before{
+  content:url(../images/activity.png);
 }
 
 .data{

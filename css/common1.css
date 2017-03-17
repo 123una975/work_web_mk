@@ -7,9 +7,9 @@ header{
   display:flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color:#111;
-  width:98%;
-  padding:1% 1% 0% 1%;
+  background-color:#222;
+  width:99%;
+  padding:0.5% 0.5% 0% 0.5%;
 }
 
 .logo{
@@ -39,34 +39,28 @@ header{
 .menubar_list li{
   padding:15px;
   background-color: transparent;
+  transition: border-bottom 0.5s;
 }
 
 .menubar_list li:hover{
   background-color: rgba(0,0,0,0.8);
-
+  border-bottom:5px solid red;
 }
 
 .menubar_list li a{
   text-decoration: none;
   color:#eee;
-  font-family: "Russo One";
   font-weight: bolder;
   font-size: 20px;
-  transition: border-bottom 0.5s;
-}
-
-.menubar_list li a:hover {
-  border-bottom:5px solid red;
 }
 
 .proverb{
   text-align: center;
   padding:1%;
-  font-family: 'Russo One', cursive;
   font-weight: bolder;
   font-size: 40px;
-  color:#eee;
-  background: linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.09),rgba(0,0,0,0.1),rgba(0,100,0,0.5));
+  color:black;
+  background: linear-gradient(to bottom,#eee,rgba(0,0,0,0.05),rgba(0,0,0,0.09),rgba(0,0,0,0.1),rgba(0,0,0,0.15),white);
 }
 
 .proverb h4{
@@ -74,13 +68,9 @@ header{
   padding:0;
 }
 
-section{
-  background:url(../images/background.jpg) left top repeat;
-}
-
 .social_media{
   position:fixed;
-  top:45%;
+  top:25%;
   width:100px;
   left:-64px;
   border:1px solid grey;
@@ -128,7 +118,6 @@ footer{
   flex-flow: column wrap;
   align-items: center;
   padding:0.5%;
-  font-family: "Russo One";
 }
 
 .footer_menu{
@@ -146,11 +135,6 @@ footer{
 .footer_menu li a{
   text-decoration: none;
   color:#eee;
-  transition:border-bottom 0.5s;
-}
-
-.footer_menu li a:hover{
-  border-bottom: 5px solid red;
 }
 
 @media all and (max-width:800px){
