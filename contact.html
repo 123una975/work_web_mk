@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MandeepK | Contacts</title>
+    <title>MandeepK | Contact</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta charset="UTF-8"/>
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Courgette" rel="stylesheet">
@@ -22,10 +23,32 @@
       </div>
     </header>
     <section>
-      <div class="proverb">Contacts</div>
-      <div class="content">
-        ABCD
-      </div>
+      <div class="proverb">Contact Me</div>
+      <form class="contact_form">
+        <div class="data">
+          <div class="topic_data">
+            <label>Your Name</label>
+            <input type="text" placeHolder="Real Name or Nick Name"/>
+          </div>
+          <div class="topic_data">
+            <label>Your E-mail</label>
+            <input type="email" placeHolder="e.g. example@xyz.com"/>
+          </div>
+          <div class="topic_data">
+            <label>Your Mobile</label>
+            <input type="text" placeholder="Optional"/>
+          </div>
+          <div class="topic_data">
+            <label>To</label>
+            <input type="email" value="mandip400@gmail.com" disabled/>
+          </div>
+          <div class="topic_data">
+            <label>Your Message</label>
+            <textarea class="description" rows="7" placeholder="What's your message?" ></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn_submit"/>
+        </div>
+      </form>
     </section>
     <footer>
       <ul class="footer_menu">

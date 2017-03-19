@@ -1,0 +1,79 @@
+section{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.contact_form{
+  margin:2%;
+  width:30%;
+  padding:1%;
+  box-shadow: 10px 10px 3px 3px rgba(100,200,52,0.25), -10px -10px 3px 3px rgba(100,200,52,0.25);
+  border-radius: 5%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  color:#eee;
+  font-family: "Russo One";
+  border:2px solid green;
+}
+
+.data{
+  width:98%;
+  padding:1%;
+}
+
+.topic_data{
+  display:flex;
+  flex-flow: column wrap;
+  padding:1%;
+  width:98%;
+}
+
+.topic_data input{
+  height:35px;
+  weight:96%;
+  border: none;
+  border-radius: 5%;
+  padding: 0px 2%;
+  font-weight: bold;
+}
+
+textarea{
+  resize: none;
+  padding:2px 2%;
+  width:96%;
+  font-weight: bold;
+}
+
+.btn_submit{
+  height:35px;
+  border-radius: 5%;
+  color:#111;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: "Russo One";
+  margin:0.5%;
+  position: relative;
+  transition: transform 2s;
+}
+
+@media all and (max-width:1200px){
+  .contact_form{
+    width:42%;
+  }
+
+  .data{
+    width: 88%;
+  }
+}
+
+@media all and (max-width:700px){
+  .contact_form{
+    width:92%;
+  }
+
+  .data{
+    width: 90%;
+  }
+}

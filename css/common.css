@@ -67,6 +67,7 @@ header{
   font-size: 40px;
   color:#eee;
   background: linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.09),rgba(0,0,0,0.1),rgba(0,100,0,0.5));
+  width:98%;
 }
 
 .proverb h4{
