@@ -5,17 +5,18 @@ section{
 }
 
 .contact_form{
-  margin:25px 2%;
+  margin:25px 2% 80px 2%;
   width:30%;
   padding: 15px 1%;
-  box-shadow: 10px 10px 3px 3px rgba(100,200,52,0.25), -10px -10px 3px 3px rgba(100,200,52,0.25);
+  box-shadow: 10px 10px 3px 3px rgba(0,0,0,1), -10px -10px 3px 3px rgba(0,0,0,1);
   border-radius: 5%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   color:#eee;
+  background-color: #222;
   font-family: "Russo One";
-  border:2px solid green;
+  border:2px solid white;
 }
 
 .data{
@@ -32,11 +33,35 @@ section{
 
 .topic_data input{
   height:35px;
-  weight:96%;
+  width:72%;
   border: none;
   border-radius: 5%;
-  padding: 0px 2%;
+  padding: 0px 14%;
   font-weight: bold;
+}
+
+.topic_data label{
+  position: relative;
+}
+.name::before{
+  position: absolute;
+  content:url(../images/pdetail.png);
+  left:1%;
+  top:100%;
+}
+
+.email::before{
+  position: absolute;
+  content:url(../images/email.png);
+  left:1%;
+  top:110%;
+}
+
+.mob::before{
+  position: absolute;
+  content:url(../images/mob.png);
+  left:1%;
+  top:100%;
 }
 
 textarea{
@@ -50,10 +75,10 @@ textarea{
   height:35px;
   border-radius: 5%;
   color:#111;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 20px;
   font-family: "Russo One";
-  margin:0.5%;
+  margin:1%;
   position: relative;
   transition: transform 2s;
 }

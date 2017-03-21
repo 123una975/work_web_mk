@@ -1,6 +1,7 @@
 body{
   padding:0;
   margin:0;
+  background-color: #999;
 }
 
 header{
@@ -9,7 +10,9 @@ header{
   justify-content: space-between;
   background-color:#111;
   width:98%;
-  padding:1% 1% 0% 1%;
+  margin-bottom:0.1%;
+  padding:0.5% 1% 0% 1%;
+  box-shadow: 0px 2px 7px 2px grey;
 }
 
 .logo{
@@ -61,22 +64,17 @@ header{
 
 .proverb{
   text-align: center;
-  padding:1%;
-  font-family: 'Russo One', cursive;
+  padding:0%;
+  font-family: 'Russo One';
   font-weight: bolder;
-  font-size: 40px;
-  color:#eee;
-  background: linear-gradient(to bottom,rgba(0,0,0,0.25),rgba(0,0,0,0.09),rgba(0,0,0,0.1),rgba(0,100,0,0.5));
-  width:98%;
+  font-size: 25px;
+  color:#333;
+  width:100%;
 }
 
 .proverb h4{
   margin:0;
   padding:0;
-}
-
-section{
-  background:url(../images/background.jpg) left top repeat;
 }
 
 .social_media{
@@ -171,7 +169,9 @@ footer{
     display:flex;
     flex-flow: column wrap;
   }
+
   .footer_menu{
     flex-flow: column wrap;
+    align-items: center;
   }
 }
