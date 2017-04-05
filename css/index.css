@@ -1,19 +1,22 @@
+/* CSS for the home page */
+
 .content{
   padding:3%;
   display:flex;
-  flex-flow:row wrap;
+  flex-flow:row wrap; /* To keep the contents of middle section of homepage in a single row..*/
   justify-content: space-around;
   width:94%;
   color:skyblue;
 }
 
+/* Formatting the style of block containing my introduction, CV and bio link */
 .intro, .cv_link, .bio_link{
-  box-shadow: 0px -30px 5px 5px rgba(0,0,0,1), 0px 20px 5px 5px rgba(0,0,0,1);
+  box-shadow: 0px -30px 5px 5px rgba(0,0,0,1), 0px 20px 5px 5px rgba(0,0,0,1); /* To make mobile shape*/
   width:17%;
   margin:10px 5% 67px 5%;
   display:flex;
   flex-flow:column wrap;
-  align-items: center;
+  align-items: center; /* To make all the contents of each block in column and align at center*/
   justify-content: space-around;
   padding:25px 1%;
   border-radius: 8%;
@@ -22,12 +25,14 @@
   position: relative;
 }
 
+/* Disabling the default formatting of hyperlinks inside the blocks */
 .intro a, .cv_link a, .bio_link a{
   text-decoration: none;
   color:transparent;
 }
 
-.intro::before, .cv_link::before, .bio_link::before{
+/* To draw a mic-like figure at the top of each mobile shaped block*/
+.intro::before, .cv_link::before, .bio_link::before{ /* (w3schools, 2017)*/
   content: '';
   position:absolute;
   top:-5%;
@@ -40,7 +45,8 @@
   border-radius: 25%;
 }
 
-.intro::after, .cv_link::after, .bio_link::after{
+/* To draw a button-like figure at the bottom of each mobile shaped block*/
+.intro::after, .cv_link::after, .bio_link::after{ /* (w3schools, 2017)*/
   content: '';
   position:absolute;
   top:101%;
@@ -57,11 +63,11 @@
   background-color:transparent;
   margin-bottom: 20px;
   width: 100%;
-  transition: transform 1.5s;
+  transition: transform 1.5s; /* To apply transition effect on images inside the blocks */
 }
 
 .my-img:hover, .cv-img:hover, .bio-img:hover{
-  transform: scale(1.2);
+  transform: scale(1.2); /* Enlarge the images inside blocks on hover */
 }
 
 .caption{
@@ -71,10 +77,11 @@
   border-bottom-left-radius: 10%;
   border-bottom-right-radius:10%;
   text-align: justify;
-  font-family: 'Russo One';
-  font-size: 17px;
+  font-family: "Cabin Sketch", cursive; /* Specifying google font to the texts inside the blocks */
+  font-size: 1.063em;
 }
 
+/* To make the page mobile responsive.. Change CSS properties of below mentioned tags when the width of device is less than 1500px*/
 @media all and ( max-width:1500px)
 {
   .intro, .cv_link, .bio_link{
@@ -83,6 +90,7 @@
   }
 }
 
+/* To make the page mobile responsive.. Change CSS properties of below mentioned tags when the width of device is less than 1000px*/
 @media all and (max-width:1000px){
   .content{
     flex-flow: column wrap;
@@ -94,6 +102,7 @@
   }
 }
 
+/* To make the page mobile responsive.. Change CSS properties of below mentioned tags when the width of device is less than 700px*/
 @media all and (max-width:700px){
   .content{
     flex-flow: column wrap;
