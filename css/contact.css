@@ -9,7 +9,6 @@ section{
   width:30%;
   padding: 15px 1%;
   box-shadow: 10px 10px 3px 3px rgba(0,0,0,1), -10px -10px 3px 3px rgba(0,0,0,1);
-  border-radius: 5%; /* To make the contact form slightly round */
   display: flex;
   flex-flow: column wrap; /* To keep the contents inside the form in column */
   align-items: center;
@@ -36,11 +35,10 @@ section{
 .topic_data input{
   height:35px;
   width:72%;
-  border: none;
   border-radius: 5%;
   padding: 0px 14%;
   font-weight: bold;
-  background-color: #ccc;
+  background-color: #eee;
 }
 
 /* Positioning the label for textboxes to relative.. */

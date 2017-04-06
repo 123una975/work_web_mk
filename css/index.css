@@ -4,7 +4,7 @@
   padding:3%;
   display:flex;
   flex-flow:row wrap; /* To keep the contents of middle section of homepage in a single row..*/
-  justify-content: space-around;
+  justify-content: center;
   width:94%;
   color:skyblue;
 }
@@ -13,7 +13,7 @@
 .intro, .cv_link, .bio_link{
   box-shadow: 0px -30px 5px 5px rgba(0,0,0,1), 0px 20px 5px 5px rgba(0,0,0,1); /* To make mobile shape*/
   width:17%;
-  margin:10px 5% 67px 5%;
+  margin:10px 1% 67px 1%;
   display:flex;
   flex-flow:column wrap;
   align-items: center; /* To make all the contents of each block in column and align at center*/
@@ -23,6 +23,16 @@
   background-color:#222;
   border:2px solid white;
   position: relative;
+}
+
+/* Slightly skewing the cv link box*/
+.cv_link{
+  transform: skewY(15deg);
+}
+
+/* Slightly skewing the bio link box*/
+.bio_link{
+  transform: skewY(-15deg);
 }
 
 /* Disabling the default formatting of hyperlinks inside the blocks */
@@ -111,5 +121,6 @@
   .intro, .cv_link, .bio_link{
     width:80%;
     margin-top:45px;
+    transform:none;
   }
 }

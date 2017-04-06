@@ -13,11 +13,13 @@
 /* Specifying width and padding for the block containing image*/
 .image-container{
   padding:5%;
-  width:10%;
+  width:15%;
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
 
 .my-img{
-  height: 100%;
   border-top-right-radius: 50%;
 }
 
@@ -34,14 +36,8 @@
   background-color:#222;
   padding:1px 0.5%;
   margin-bottom:35px;
-  border-radius:5%;
-  transition: transform 1s; /* To apply transition effect on Cv detail blocks */
   border:2px solid white;
   box-shadow: 10px 10px 3px 3px rgba(0,0,0,1), -10px -10px 3px 3px rgba(0,0,0,1); /* Applying shadow on blocks */
-}
-
-.personal:hover, .education:hover, .course:hover, .skill:hover, .profession:hover, .activity:hover{
-  transform: scale(1.03); /* Enlarge the detail boxes on hover*/
 }
 
 /* Title for each CV details is made bold and lightgreen in colour */
@@ -105,7 +101,8 @@
   .image-container{
     width:100%;
     padding:0%;
-    text-align: center;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   .my-img{
@@ -137,7 +134,6 @@
   .image-container{
     width:100%;
     padding:0%;
-    text-align: center;
   }
 
   .my-img{

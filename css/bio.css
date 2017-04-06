@@ -9,7 +9,6 @@ section{
   width:40%;
   padding: 25px 1%;
   box-shadow: 10px 10px 3px 3px rgba(0,0,0,1), -10px -10px 3px 3px rgba(0,0,0,1); /* Giving shadow to the block containing biography*/
-  border-radius: 5%;
   display: flex;
   flex-flow: column wrap; /* Put the contents inside this block "content" in column */
   align-items: center;
@@ -21,7 +20,7 @@ section{
   border:2px solid white;
 }
 
-/* Specifying width and padding of the block containing biography*/
+/* Giving width and padding of the block containing biography*/
 .biography{
   width:98%;
   padding:1%;
