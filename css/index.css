@@ -1,3 +1,8 @@
+/*  https://123una975.github.io/work_web_mk/css/index.css
+    Name: Mandeep Koirala
+    UN ID: 16418511
+*/
+
 /* CSS for the home page */
 
 .content{
@@ -42,7 +47,7 @@
 }
 
 /* To draw a mic-like figure at the top of each mobile shaped block*/
-.intro::before, .cv_link::before, .bio_link::before{ /* (w3schools, 2017)*/
+.intro::before, .cv_link::before, .bio_link::before{ /* (w3schools, 1999)*/
   content: '';
   position:absolute;
   top:-5%;
@@ -56,7 +61,7 @@
 }
 
 /* To draw a button-like figure at the bottom of each mobile shaped block*/
-.intro::after, .cv_link::after, .bio_link::after{ /* (w3schools, 2017)*/
+.intro::after, .cv_link::after, .bio_link::after{ /* (w3schools, 1999)*/
   content: '';
   position:absolute;
   top:101%;
@@ -124,3 +129,11 @@
     transform:none;
   }
 }
+
+
+/*
+    References:
+
+    W3schools (1999) CSS Pseudo-elements. [online]. Available from: https://www.w3schools.com/css/css_pseudo_elements.asp [Accessed 10th March 2017]
+
+*/
