@@ -36,7 +36,7 @@
   justify-content: space-around; /* Keep spaces around the detail blocks */
 }
 
-.personal, .education, .course, .skill, .profession, .activity{
+.personal_info, .education_info, .course_info, .skill_info, .profession_info, .activity_info{
   width:40%;
   background-color:#222;
   padding:1px 0.5%;
@@ -123,14 +123,11 @@
     padding:0;
     padding-top: 35px;
   }
-  .personal, .education, .course, .skill, .profession, .activity{
+  .personal_info, .education_info, .course_info, .skill_info, .profession_info, .activity_info{
     width:50%;
     margin-bottom: 35px;
   }
 
-  .personal:hover, .education:hover, .course:hover, .skill:hover, .profession:hover, .activity:hover{
-    transform: scale(1);
-  }
 }
 
 /* To make the page mobile responsive.. Change CSS properties of below mentioned tags when the width of device is less than 800px*/
@@ -154,13 +151,10 @@
     padding:0;
     padding-top: 35px;
   }
-  .personal, .education, .course, .skill, .profession, .activity{
+  .personal_info, .education_info, .course_info, .skill_info, .profession_info, .activity_info{
     width:90%;
     margin-bottom: 35px;
     font-size: 0.750em;
   }
 
-  .personal:hover, .education:hover, .course:hover, .skill:hover, .profession:hover, .activity:hover{
-    transform: scale(1);
-  }
 }

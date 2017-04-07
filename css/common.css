@@ -28,7 +28,7 @@ header{
   box-shadow: 0px 1px 10px 1px #222; /* A short shadow at the bottom of the header */
 }
 
-.logo{
+.logo-container{
   width:50%; /* Width of the block containing logo image*/
 }
 
@@ -176,7 +176,7 @@ footer{
     display:flex;
     flex-flow: column wrap;
   }
-  .logo{
+  .logo-container{
     width:100%;
     text-align: center;
   }
