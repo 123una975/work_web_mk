@@ -20,7 +20,7 @@ body{
 header{
   display:flex;
   flex-flow: row wrap; /* Display the contents of header in row*/
-  justify-content: space-around; /* Keep spaces between the contents of header*/
+  justify-content: space-between; /* Keep spaces between the contents of header*/
   background-color:#111;
   width:98%;
   margin-bottom:0.1%;
